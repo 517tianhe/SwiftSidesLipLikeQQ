@@ -40,22 +40,6 @@
             </objects>
             <point key="canvasLocation" x="829" y="-207"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="89k-h6-NJl">
-            <objects>
-                <navigationController id="W50-gx-snp" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dZQ-nf-uFE">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="qSM-Ji-uSP" kind="relationship" relationship="rootViewController" id="3yy-0A-HLU"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IOf-pV-nDB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="41" y="519"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="rCZ-Nv-d38">
             <objects>
@@ -87,33 +71,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="天河么么哒!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXC-mg-TMf">
-                                <rect key="frame" x="141" y="196" width="318" height="209"/>
+                                <rect key="frame" x="141" y="258" width="318" height="83"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="318" id="kX0-iK-wbu"/>
-                                    <constraint firstAttribute="height" constant="209" id="xgA-vu-G2j"/>
+                                    <constraint firstAttribute="height" constant="83" id="xgA-vu-G2j"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="55"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="Nih-lP-LRc" appends="YES" id="4tN-v8-fry"/>
-                                </connections>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.95294117647058818" green="0.61568627450980395" blue="0.062745098039215685" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="DXC-mg-TMf" secondAttribute="centerX" id="8He-ec-UH7"/>
                             <constraint firstAttribute="centerY" secondItem="DXC-mg-TMf" secondAttribute="centerY" id="mt7-Be-FTN"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="XSC-cd-xlK" appends="YES" id="KfN-xX-9dt"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="4nV-MK-oxx"/>
                     <connections>
-                        <outlet property="panGesture" destination="Nih-lP-LRc" id="ART-nC-LpJ"/>
+                        <outlet property="panGesture" destination="XSC-cd-xlK" id="Ou9-Ik-CHg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WYe-Hr-6tX" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="Nih-lP-LRc"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="XSC-cd-xlK"/>
             </objects>
             <point key="canvasLocation" x="829" y="519"/>
         </scene>

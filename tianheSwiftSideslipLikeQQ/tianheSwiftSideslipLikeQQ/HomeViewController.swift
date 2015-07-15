@@ -9,7 +9,6 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
     @IBOutlet var panGesture: UIPanGestureRecognizer!
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "tianheSwiftSideslipLikeQQ/ViewController.swift"
+            timestampString = "458633519.414941"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "tianheSwiftSideslipLikeQQ.ViewController.homeViewController.setter : Swift.ImplicitlyUnwrappedOptional&lt;tianheSwiftSideslipLikeQQ.HomeViewController&gt;"
+                  moduleName = "tianheSwiftSideslipLikeQQ"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wanglingjie/Desktop/tianhe_git/SwiftSiderlipLikeQQ/tianheSwiftSideslipLikeQQ/tianheSwiftSideslipLikeQQ/ViewController.swift"
+                  timestampString = "458633525.590398"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "tianheSwiftSideslipLikeQQ.ViewController.homeViewController.materializeForSet : Swift.ImplicitlyUnwrappedOptional&lt;tianheSwiftSideslipLikeQQ.HomeViewController&gt;"
+                  moduleName = "tianheSwiftSideslipLikeQQ"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wanglingjie/Desktop/tianhe_git/SwiftSiderlipLikeQQ/tianheSwiftSideslipLikeQQ/tianheSwiftSideslipLikeQQ/ViewController.swift"
+                  timestampString = "458633525.590612"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "tianheSwiftSideslipLikeQQ.ViewController.init (tianheSwiftSideslipLikeQQ.ViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; tianheSwiftSideslipLikeQQ.ViewController"
+                  moduleName = "tianheSwiftSideslipLikeQQ"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wanglingjie/Desktop/tianhe_git/SwiftSiderlipLikeQQ/tianheSwiftSideslipLikeQQ/tianheSwiftSideslipLikeQQ/ViewController.swift"
+                  timestampString = "458633525.590947"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "53">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "tianheSwiftSideslipLikeQQ.ViewController.init (tianheSwiftSideslipLikeQQ.ViewController.Type)(coder : ObjectiveC.NSCoder) -&gt; tianheSwiftSideslipLikeQQ.ViewController"
+                  moduleName = "tianheSwiftSideslipLikeQQ"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wanglingjie/Desktop/tianhe_git/SwiftSiderlipLikeQQ/tianheSwiftSideslipLikeQQ/tianheSwiftSideslipLikeQQ/ViewController.swift"
+                  timestampString = "458633525.591121"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "47">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "tianheSwiftSideslipLikeQQ/ViewController.swift"
+            timestampString = "458633522.35934"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "tianheSwiftSideslipLikeQQ/ViewController.swift"
+            timestampString = "458636162.885976"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "pan(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

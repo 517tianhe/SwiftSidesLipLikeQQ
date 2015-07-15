@@ -28,11 +28,15 @@ class ViewController: UIViewController {
         self.view.addSubview(imageView)
         
         //通过storyBoard 取出HomeViewController 的 view, 放在背景视图上面
-        homeViewController = UIStoryboard(name: "main", bundle: nil).instantiateViewControllerWithIdentifier("HomeViewController") as! HomeViewController
+        homeViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("THHomeViewController") as! HomeViewController
         self.view.addSubview(homeViewController.view)
         
         //绑定 UIpanGestureRecongnizer
-        homeViewController.panGesture.addTarget(self, action: Selector("pan"))
+        let panGesture = homeViewController.panGesture
+        panGesture.addTarget(self, action: Selector("pan:"))
+        println("\(Commn.screeWidth)")
+        println("\(Commn.screeHeight)")
+        println("\(self.view.center.x)")
         
         
     }
@@ -70,32 +74,43 @@ class ViewController: UIViewController {
         if proportion <= Proportion{ //若缩放比例已经达到最小,则不再继续动画
             return
         }
-        
-        
-        
+        //执行平移和缩放动画
+        println("center = \(recongnizer.view!.center)")
+        recongnizer.view!.center = CGPointMake(self.view.center.x + trueDistance, self.view.center.y)
+        recongnizer.view!.transform = CGAffineTransformScale(CGAffineTransformIdentity, proportion, proportion)
     }
     
     //封装三个方法 ,便于后期调用
     
     //展示左视图
     func showLeft(){
+        distance = self.view.center.x * (FullDistance + Proportion / 2)
+        println("\(self.view.center.x)")
+        doTheAnimate(self.Proportion)
         
     }
     //展示主视图
     func showHome()
     {
-        
+        distance = 0
+        doTheAnimate(1)
     }
     
     //展示右视图
     func showRight()
     {
-        
+        distance = self.view.center.x * -(FullDistance + Proportion / 2)
+        doTheAnimate(self.Proportion)
     }
     
     //执行三种视图展示
     func doTheAnimate(proportion: CGFloat)
     {
+        UIView.animateWithDuration(0.3, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: {() -> Void in
+            self.homeViewController.view.center = CGPointMake(self.view.center.x + self.distance, self.view.center.y)
+            self.homeViewController.view.transform = CGAffineTransformScale(CGAffineTransformIdentity, proportion,proportion)
+            }, completion: nil
+            )
         
     }
 

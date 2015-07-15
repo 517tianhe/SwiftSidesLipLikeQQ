@@ -8,7 +8,12 @@
 
 import UIKit
 
-class LeftViewController: UIViewController {
+class LeftViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    let titlesDictionary = ["开通会员","QQ钱包","网上银行","个性装扮","我的收藏","我的文件"]
+    
+    @IBOutlet weak var avaterImageView: UIImageView!
+    @IBOutlet weak var settingTableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()

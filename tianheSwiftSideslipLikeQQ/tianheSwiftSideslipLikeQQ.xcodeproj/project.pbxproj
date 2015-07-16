@@ -13,6 +13,10 @@
 		EA11528F1B55E6E400345383 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA11528E1B55E6E400345383 /* Images.xcassets */; };
 		EA1152921B55E6E400345383 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1152901B55E6E400345383 /* LaunchScreen.xib */; };
 		EA11529E1B55E6E400345383 /* tianheSwiftSideslipLikeQQTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA11529D1B55E6E400345383 /* tianheSwiftSideslipLikeQQTests.swift */; };
+		EA15E7EA1B57402E006A8B28 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA15E7E81B57402E006A8B28 /* MainTabBarController.swift */; };
+		EA15E7EB1B57402E006A8B28 /* MainTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA15E7E91B57402E006A8B28 /* MainTabBarController.xib */; };
+		EA15E7ED1B5744C5006A8B28 /* OtherPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA15E7EC1B5744C5006A8B28 /* OtherPageViewController.swift */; };
+		EA15E7EF1B574C89006A8B28 /* SwiftColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA15E7EE1B574C89006A8B28 /* SwiftColors.swift */; };
 		EA9053BC1B55ED5900CC1947 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9053BB1B55ED5900CC1947 /* HomeViewController.swift */; };
 		EA9053C21B55EE3500CC1947 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9053C11B55EE3500CC1947 /* LeftViewController.swift */; };
 		EA9053C41B55F09A00CC1947 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9053C31B55F09A00CC1947 /* Common.swift */; };
@@ -39,6 +43,10 @@
 		EA1152971B55E6E400345383 /* tianheSwiftSideslipLikeQQTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tianheSwiftSideslipLikeQQTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA11529C1B55E6E400345383 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA11529D1B55E6E400345383 /* tianheSwiftSideslipLikeQQTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tianheSwiftSideslipLikeQQTests.swift; sourceTree = "<group>"; };
+		EA15E7E81B57402E006A8B28 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		EA15E7E91B57402E006A8B28 /* MainTabBarController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTabBarController.xib; sourceTree = "<group>"; };
+		EA15E7EC1B5744C5006A8B28 /* OtherPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherPageViewController.swift; sourceTree = "<group>"; };
+		EA15E7EE1B574C89006A8B28 /* SwiftColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftColors.swift; sourceTree = "<group>"; };
 		EA9053BB1B55ED5900CC1947 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		EA9053C11B55EE3500CC1947 /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
 		EA9053C31B55F09A00CC1947 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
@@ -65,6 +73,7 @@
 		EA1152791B55E6E400345383 = {
 			isa = PBXGroup;
 			children = (
+				EA15E7EE1B574C89006A8B28 /* SwiftColors.swift */,
 				EA1152841B55E6E400345383 /* tianheSwiftSideslipLikeQQ */,
 				EA11529A1B55E6E400345383 /* tianheSwiftSideslipLikeQQTests */,
 				EA1152831B55E6E400345383 /* Products */,
@@ -85,12 +94,15 @@
 			children = (
 				EA1152871B55E6E400345383 /* AppDelegate.swift */,
 				EA1152891B55E6E400345383 /* ViewController.swift */,
+				EA15E7EC1B5744C5006A8B28 /* OtherPageViewController.swift */,
 				EA9053C31B55F09A00CC1947 /* Common.swift */,
 				EA9053BB1B55ED5900CC1947 /* HomeViewController.swift */,
 				EA9053C11B55EE3500CC1947 /* LeftViewController.swift */,
 				EA11528B1B55E6E400345383 /* Main.storyboard */,
 				EA11528E1B55E6E400345383 /* Images.xcassets */,
 				EA1152901B55E6E400345383 /* LaunchScreen.xib */,
+				EA15E7E81B57402E006A8B28 /* MainTabBarController.swift */,
+				EA15E7E91B57402E006A8B28 /* MainTabBarController.xib */,
 				EA1152851B55E6E400345383 /* Supporting Files */,
 			);
 			path = tianheSwiftSideslipLikeQQ;
@@ -204,6 +216,7 @@
 			files = (
 				EA11528D1B55E6E400345383 /* Main.storyboard in Resources */,
 				EA1152921B55E6E400345383 /* LaunchScreen.xib in Resources */,
+				EA15E7EB1B57402E006A8B28 /* MainTabBarController.xib in Resources */,
 				EA11528F1B55E6E400345383 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,7 +237,10 @@
 			files = (
 				EA11528A1B55E6E400345383 /* ViewController.swift in Sources */,
 				EA9053C21B55EE3500CC1947 /* LeftViewController.swift in Sources */,
+				EA15E7EA1B57402E006A8B28 /* MainTabBarController.swift in Sources */,
+				EA15E7EF1B574C89006A8B28 /* SwiftColors.swift in Sources */,
 				EA1152881B55E6E400345383 /* AppDelegate.swift in Sources */,
+				EA15E7ED1B5744C5006A8B28 /* OtherPageViewController.swift in Sources */,
 				EA9053C41B55F09A00CC1947 /* Common.swift in Sources */,
 				EA9053BC1B55ED5900CC1947 /* HomeViewController.swift in Sources */,
 			);

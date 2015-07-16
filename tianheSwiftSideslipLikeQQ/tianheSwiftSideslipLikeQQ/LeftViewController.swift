@@ -10,15 +10,19 @@ import UIKit
 
 class LeftViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    let titlesDictionary = ["开通会员","QQ钱包","网上银行","个性装扮","我的收藏","我的文件"]
+    let titlesDictionary = ["开通会员", "QQ钱包", "网上营业厅", "个性装扮", "我的收藏", "我的相册", "我的文件"]
     
     @IBOutlet weak var avaterImageView: UIImageView!
     @IBOutlet weak var settingTableView: UITableView!
 
+    @IBOutlet weak var heightLayoutConstraintOfSettingTableView: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+       // settingTableView.tableFooterView = UIView()
+        heightLayoutConstraintOfSettingTableView.constant = Commn.screeHeight < 500 ? Commn.screeHeight * (568 - 221) / 568 : 347
+        self.view.frame = CGRectMake(0, 0, 320 * 0.78, Commn.screeHeight)
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,5 +40,29 @@ class LeftViewController: UIViewController, UITableViewDataSource, UITableViewDe
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let viewController =  Commn.rootViewController
+        viewController.homeViewController.titleOfOtherPages = titlesDictionary[indexPath.row]
+        viewController.homeViewController.performSegueWithIdentifier("showOtherPages", sender: self)
+        Commn.contactsVC.view.removeFromSuperview()
+        viewController.mainTabBarController.tabBar.hidden = true
+        viewController.mainTabBarController.selectedIndex = 0
+        viewController.showHome()
+        tableView.deselectRowAtIndexPath(indexPath, animated: false)
+    }
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 7
+    }
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("leftViewcell", forIndexPath: indexPath) as! UITableViewCell
+        
+        cell.backgroundColor = UIColor.clearColor()
+        cell.textLabel!.text = titlesDictionary[indexPath.row]
+        return cell
+    }
 
 }

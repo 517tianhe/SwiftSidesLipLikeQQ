@@ -11,4 +11,6 @@ import UIKit
 struct Commn {
     static let screeWidth = UIScreen.mainScreen().applicationFrame.maxX
     static let screeHeight = UIScreen.mainScreen().applicationFrame.maxY
+    static let rootViewController = UIApplication.sharedApplication().keyWindow?.rootViewController as! ViewController
+    static let contactsVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Contacts") as! UIViewController
 }
